@@ -143,7 +143,7 @@ public class StartViewModel {
     //&& townIsValid && homeNumberIsValid
     //&& (pizzasIsValid || burgersIsValid || saladsIsValid)
     void submitChecker() {
-        if (nameIsValid && surnameIsValid && townIsValid && homeNumberIsValid && (pizzasIsValid || burgersIsValid || saladsIsValid) && (pizzaSelected || burgerSelected || saladSelected))
+        if (nameIsValid && surnameIsValid && (pizzasIsValid || burgersIsValid || saladsIsValid) && (pizzaSelected || burgerSelected || saladSelected))
             cannotSubmitProperty.setValue(false);
         else
             cannotSubmitProperty.setValue(true);

@@ -53,7 +53,7 @@ public class StartView {
         saladAmountField.valueProperty().addListener((observable, oldValue, newValue) -> viewModel.setEnteredSalads(newValue));
         saladAmountField.disableProperty().bind(viewModel.cannotEnteredSaladProperty);
 
-        Button buttonSubmit = new Button("Wykonaj");
+        Button buttonSubmit = new Button("Zamow");
         buttonSubmit.disableProperty().bind(viewModel.cannotSubmitProperty);
         buttonSubmit.setOnAction(e -> new SecondViewFactory().create(stage));
 
@@ -130,7 +130,7 @@ public class StartView {
         burgerHBox.setSpacing(5);
         saladHBox.setSpacing(5);
 
-        formLayout.addRow(formLayout.getRowCount(), new Label("Sposób platnosci:"), paymentVBox);
+        formLayout.addRow(formLayout.getRowCount(), new Label("Odbior:"), paymentVBox);
         formLayout.addRow(formLayout.getRowCount(), new Label("Imie:"), transferNameTextField);
         formLayout.addRow(formLayout.getRowCount(), new Label("Nazwisko:"), transferSurnameField);
         formLayout.addRow(formLayout.getRowCount(), new Label("Miejscowosc:"), transferTownField);

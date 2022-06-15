@@ -40,8 +40,8 @@ public class SecondView {
         GridPane formLayout = new GridPane();
         String format = new SimpleDateFormat("dd.MM.yyyy HH:mm").format(new Date());
         LocalDateTime localDateTime = LocalDateTime.now().plusMinutes(30);
-        formLayout.addRow(formLayout.getRowCount(), new Text("Twoje zamówienie zostało zaakceptowane!"));
-        formLayout.addRow(formLayout.getRowCount(), new Text("Szacowany czas przygotowania zamówienia: " + LocalDate.now() + " " + LocalTime.now().plusMinutes(30).format(DateTimeFormatter.ofPattern("HH:mm"))));
+        formLayout.addRow(formLayout.getRowCount(), new Text("Twoje zamowienie zostalo zaakceptowane!"));
+        formLayout.addRow(formLayout.getRowCount(), new Text("Szacowany czas przygotowania zamowienia: " + LocalDate.now() + " " + LocalTime.now().plusMinutes(30).format(DateTimeFormatter.ofPattern("HH:mm"))));
 
         formLayout.setHgap(10);
         formLayout.setVgap(3);
